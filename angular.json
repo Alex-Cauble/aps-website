@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "APSEmergencyWebsite"
+  "defaultProject": "APSEmergencyWebsite",
+  "cli": {
+    "analytics": "2bf654f9-7ff0-41c7-9610-510af8ceec16"
+  }
 }
