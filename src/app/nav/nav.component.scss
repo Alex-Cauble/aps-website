@@ -21,17 +21,15 @@
   z-index: 1;
   background-color: #af2513;
   padding: 10px;
-  .mobile {
-    display: flex;
-    flex-direction: column;
-  }
 }
+
 #header-text {
   margin-left: 5px;
 }
 
 .construction {
   background-color: #af2513;
+  position: sticky;
   z-index: 1;
   color: white;
   height: 3vh;
@@ -55,4 +53,7 @@ md-sidenav.md-closed.md-locked-open-add-active {
   min-width: 250px !important;
   width: 30vw !important;
   max-width: 300px !important;
+}
+:host::ng-deep .mat-droor-inner-container {
+  max-height: 100% !important;
 }
