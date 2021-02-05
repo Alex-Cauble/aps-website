@@ -27,3 +27,10 @@ button {
 .mat-expansion-panel:not([class*="mat-elevation-z"]) {
   box-shadow: none;
 }
+mat-sidenav,
+md-sidenav.md-locked-open,
+md-sidenav.md-closed.md-locked-open-add-active {
+  min-width: 250px !important;
+  width: 30vw !important;
+  max-width: 300px !important;
+}

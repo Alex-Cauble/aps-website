@@ -12,7 +12,7 @@
       <app-school-drop-down  class="flex-right"></app-school-drop-down>
     </mat-toolbar>
 <mat-sidenav-container  class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav"
+  <mat-sidenav autosize #drawer class="sidenav"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
