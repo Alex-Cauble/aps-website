@@ -7,12 +7,14 @@ import { EllisInfoComponent } from './component/ellis-info/ellis-info.component'
 import { HomeComponent } from './component/home/home.component';
 import { IjholtonInfoComponent } from './component/ijholton-info/ijholton-info.component';
 import { NevelnInfoComponent } from './component/neveln-info/neveln-info.component';
+import { SchoolBoardComponent } from './component/school-board/school-board.component';
 import { SouthgateInfoComponent } from './component/southgate-info/southgate-info.component';
 import { SumnerInfoComponent } from './component/sumner-info/sumner-info.component';
 import { WoodsonInfoComponent } from './component/woodson-info/woodson-info.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'board', component: SchoolBoardComponent },
   { path: 'ahs', component: AustinHighInfoComponent },
   { path: 'ellis', component: EllisInfoComponent },
   { path: 'ijholton', component: IjholtonInfoComponent },

@@ -27,6 +27,7 @@ import { WoodsonInfoComponent } from './component/woodson-info/woodson-info.comp
 import { ClcInfoComponent } from './component/clc-info/clc-info.component';
 import { SumnerInfoComponent } from './component/sumner-info/sumner-info.component';
 import { ContactItemComponent } from './component/contact-item/contact-item.component';
+import { SchoolBoardComponent } from './component/school-board/school-board.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { ContactItemComponent } from './component/contact-item/contact-item.comp
     ClcInfoComponent,
     SumnerInfoComponent,
     ContactItemComponent,
+    SchoolBoardComponent,
   ],
   imports: [
     BrowserModule,
