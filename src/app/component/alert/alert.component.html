@@ -1,3 +1,5 @@
-<section *ngIf="alertMessage">
-  {{ alertMessage }}
+<section *ngIf="alertMessages && alertMessages.length > 0">
+  <ul>
+    <li *ngFor="let alert of alertMessages">{{ alert }}</li>
+  </ul>
 </section>

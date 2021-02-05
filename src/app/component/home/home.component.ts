@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  alertMessage = 'School is Closed';
+  alertMessages = ['School is closed', 'Woodson Confrences Postponed'];
 
   constructor() {}
 }

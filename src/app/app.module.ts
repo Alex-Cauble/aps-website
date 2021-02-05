@@ -25,6 +25,8 @@ import { NevelnInfoComponent } from './component/neveln-info/neveln-info.compone
 import { SouthgateInfoComponent } from './component/southgate-info/southgate-info.component';
 import { WoodsonInfoComponent } from './component/woodson-info/woodson-info.component';
 import { ClcInfoComponent } from './component/clc-info/clc-info.component';
+import { SumnerInfoComponent } from './component/sumner-info/sumner-info.component';
+import { ContactItemComponent } from './component/contact-item/contact-item.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { ClcInfoComponent } from './component/clc-info/clc-info.component';
     SouthgateInfoComponent,
     WoodsonInfoComponent,
     ClcInfoComponent,
+    SumnerInfoComponent,
+    ContactItemComponent,
   ],
   imports: [
     BrowserModule,

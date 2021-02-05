@@ -6,7 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./alert.component.scss'],
 })
 export class AlertComponent {
-  @Input() alertMessage: string | undefined = undefined;
+  @Input() alertMessages: string[];
 
-  constructor() {}
+  constructor() {
+    this.alertMessages = [];
+  }
 }
