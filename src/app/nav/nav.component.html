@@ -8,7 +8,7 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <img src="../../assets/APS_white.png" style="height: 100%;">
-      <span id="header-text">Austin Public Schools</span>
+      <span id="header-text" routerLink="home">Austin Public Schools</span>
     </mat-toolbar>
 <mat-sidenav-container  class="sidenav-container">
   <mat-sidenav autosize #drawer class="sidenav"
@@ -30,12 +30,12 @@
       <a mat-list-item href="https://isd492.schoology.com/login/ldap?&school=572275569">Schoology</a>
       <a mat-list-item href="https://app.seesaw.me/">Seesaw</a>
       <a mat-list-item href="https://myapps.microsoft.com/signin/McGraw-Hill/491bdf6d-b35f-4b54-98da-335578d7f21f?tenantId=370a8996-6688-49f4-98df-a887ae61438c">McGraw-Hill</a>
-      <a mat-list-item href="https://myapps.microsoft.com/signin/Savvas%20%20Pearson/f79ee962-fea0-4051-ba0a-4067c8a78ec7?tenantId=370a8996-6688-49f4-98df-a887ae61438c">Savvas/Person</a>
+      <a mat-list-item href="https://myapps.microsoft.com/signin/Savvas%20%20Pearson/f79ee962-fea0-4051-ba0a-4067c8a78ec7?tenantId=370a8996-6688-49f4-98df-a887ae61438c">Savvas/Pearson</a>
       <a mat-list-item href="https://nearpod.com/">Nearpod</a>
-      <a mat-list-item href="http://www.performanceseries.com/">Scantron</a>
       <a mat-list-item href="https://languagelive.voyagersopris.com/services/logon">Language! Live</a>
       <a mat-list-item href="https://www.raz-kids.com/">Raz Kids</a>
       <a mat-list-item href="https://my.hrw.com/">Holt Online</a>
+      <a mat-list-item href="https://portal.mncis.intocareers.org/">MCIS</a>
       <a mat-list-item href="https://itconnect.austin.k12.mn.us/">Connect Wise</a>
       <a mat-list-item href="https://ras.austin.k12.mn.us/">Proxy Pro</a>
       </mat-expansion-panel>
@@ -89,8 +89,16 @@
         <mat-expansion-panel-header>
           <mat-panel-title><strong>Schools</strong></mat-panel-title>
         </mat-expansion-panel-header>
-        <button mat-button>Austin High <a href="tel:15074601800">(507)-460-1800</a></button>
-        <button mat-button>Ellis <a href="tel:15074601500">(507)-460-1500</a></button>
+        <a mat-list-item routerLink="ahs">Austin High</a>
+        <a mat-list-item routerLink="ahs">Ellis</a>
+        <a mat-list-item routerLink="ahs">IJ Holton</a>
+        <a mat-list-item routerLink="ahs">Banfield</a>
+        <a mat-list-item routerLink="ahs">Neveln</a>
+        <a mat-list-item routerLink="ahs">Southgate</a>
+        <a mat-list-item routerLink="ahs">Woodson</a>
+        <a mat-list-item routerLink="ahs">CLC</a>
+        <a mat-list-item routerLink="ahs">Area Learning Center</a>
+        <!-- <button mat-button>Ellis <a href="tel:15074601500">(507)-460-1500</a></button>
         <button mat-button>IJ Holton <a href="tel:15074601525">(507)-460-1525</a></button>
         <button mat-button>Banfield School <a href="tel:15074601200">(507)-460-1200</a></button>
         <button mat-button>Neveln <a href="tel:15074601600">(507)-460-1600</a></button>
@@ -98,7 +106,7 @@
         <button mat-button>Sumner <a href="tel:15074601100">(507)-460-1100</a></button>
         <button mat-button>Woodson <a href="tel:15074601400">(507)-460-1400</a></button>
         <button mat-button>CLC <a href="tel:15074601700">(507)-460-1700</a></button>
-        <button mat-button>Area Learning Center <a href="tel:15074601800">(507)-460-1800</a></button>
+        <button mat-button>Area Learning Center <a href="tel:15074601800">(507)-460-1800</a></button> -->
       </mat-expansion-panel>
       <mat-expansion-panel>
         <mat-expansion-panel-header>

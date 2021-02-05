@@ -17,6 +17,14 @@ import { HomeComponent } from './component/home/home.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { SchoolDropDownComponent } from './component/school-drop-down/school-drop-down.component';
 import { AlertComponent } from './component/alert/alert.component';
+import { AustinHighInfoComponent } from './component/austin-high-info/austin-high-info.component';
+import { EllisInfoComponent } from './component/ellis-info/ellis-info.component';
+import { IjholtonInfoComponent } from './component/ijholton-info/ijholton-info.component';
+import { BanfieldInfoComponent } from './component/banfield-info/banfield-info.component';
+import { NevelnInfoComponent } from './component/neveln-info/neveln-info.component';
+import { SouthgateInfoComponent } from './component/southgate-info/southgate-info.component';
+import { WoodsonInfoComponent } from './component/woodson-info/woodson-info.component';
+import { ClcInfoComponent } from './component/clc-info/clc-info.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +34,14 @@ import { AlertComponent } from './component/alert/alert.component';
     ContactComponent,
     SchoolDropDownComponent,
     AlertComponent,
+    AustinHighInfoComponent,
+    EllisInfoComponent,
+    IjholtonInfoComponent,
+    BanfieldInfoComponent,
+    NevelnInfoComponent,
+    SouthgateInfoComponent,
+    WoodsonInfoComponent,
+    ClcInfoComponent,
   ],
   imports: [
     BrowserModule,

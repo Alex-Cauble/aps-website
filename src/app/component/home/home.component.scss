@@ -16,14 +16,14 @@ section {
     justify-content: center;
     align-items: center;
   }
+  img,
   h1 {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // top: 40%;
+    // left: 50%;
+    // transform: translate(50%, 50%);
+    bottom: 5%;
+    right: 5%;
     color: white;
-    background: rgba(0, 0, 0, 0.4);
-    font-size: 4em;
-    padding: 1em;
   }
 }
