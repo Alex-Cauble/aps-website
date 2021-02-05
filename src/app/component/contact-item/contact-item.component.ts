@@ -10,4 +10,8 @@ export class ContactItemComponent implements OnInit {
   @Input() number: string = '';
 
   constructor() {}
+
+  formatAsTelephone(tel: string): string {
+    return tel.replace(/\D/g, '');
+  }
 }

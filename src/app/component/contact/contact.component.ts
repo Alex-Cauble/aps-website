@@ -7,15 +7,7 @@ import { Contact } from 'src/app/types/Contact.type';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
-  @Input() title: string = 'Austin High School';
-  @Input() contacts: Contact[] = [
-    { name: 'Phone', number: '(000)-000-0000' },
-    { name: 'Phone', number: '(000)-000-0000' },
-    { name: 'Phone', number: '(000)-000-0000' },
-    { name: 'Phone', number: '(000)-000-0000' },
-    { name: 'Phone', number: '(000)-000-0000' },
-    { name: 'Phone', number: '(000)-000-0000' },
-    { name: 'Phone', number: '(000)-000-0000' },
-  ];
+  @Input() title: string = '';
+  @Input() contacts: Contact[] = [];
   constructor() {}
 }
