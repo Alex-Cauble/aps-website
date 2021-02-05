@@ -7,6 +7,14 @@ section {
   background-size: cover;
   background-position: center;
   position: relative;
+  .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   h1 {
     position: absolute;
     top: 40%;
