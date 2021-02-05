@@ -17,6 +17,7 @@
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
+  height: 6vh;
   z-index: 1;
   background-color: #af2513;
   padding: 10px;
@@ -27,6 +28,15 @@
 }
 #header-text {
   margin-left: 5px;
+}
+
+.construction {
+  background-color: #af2513;
+  z-index: 1;
+  color: white;
+  height: 3vh;
+  display: flex;
+  justify-content: center;
 }
 
 .flex-right {
