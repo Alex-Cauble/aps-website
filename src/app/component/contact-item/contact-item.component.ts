@@ -13,6 +13,6 @@ export class ContactItemComponent {
   constructor() {}
 
   formatAsTelephone(tel: string): string {
-    return tel.replace(/\D/g, '');
+    return `tel:${tel.replace(/\D/g, '')}`;
   }
 }
