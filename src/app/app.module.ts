@@ -9,6 +9,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
@@ -17,7 +18,13 @@ import { ContactComponent } from './component/contact/contact.component';
 import { SchoolDropDownComponent } from './component/school-drop-down/school-drop-down.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, HomeComponent, ContactComponent, SchoolDropDownComponent],
+  declarations: [
+    AppComponent,
+    NavComponent,
+    HomeComponent,
+    ContactComponent,
+    SchoolDropDownComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,6 +32,7 @@ import { SchoolDropDownComponent } from './component/school-drop-down/school-dro
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
+    MatExpansionModule,
     MatMenuModule,
     MatSidenavModule,
     MatIconModule,
