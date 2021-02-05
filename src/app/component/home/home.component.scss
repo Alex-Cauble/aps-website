@@ -7,6 +7,7 @@ section {
   background-size: cover;
   background-position: center;
   position: relative;
+  overflow: hidden;
   .overlay {
     background: rgba(0, 0, 0, 0.4);
     height: 100%;

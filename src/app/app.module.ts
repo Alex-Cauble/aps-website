@@ -16,6 +16,7 @@ import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './component/home/home.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { SchoolDropDownComponent } from './component/school-drop-down/school-drop-down.component';
+import { AlertComponent } from './component/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SchoolDropDownComponent } from './component/school-drop-down/school-dro
     HomeComponent,
     ContactComponent,
     SchoolDropDownComponent,
+    AlertComponent,
   ],
   imports: [
     BrowserModule,
