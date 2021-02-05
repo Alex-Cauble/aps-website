@@ -20,7 +20,9 @@
       <mat-expansion-panel>
         <mat-expansion-panel-header>
         <mat-panel-title>
-          Student/Family Resources
+          <strong>
+            Student/Family Resources
+          </strong>
         </mat-panel-title>
         </mat-expansion-panel-header>
 
@@ -37,7 +39,11 @@
       </mat-expansion-panel>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
-          <mat-panel-title>Staff/Employees</mat-panel-title>
+          <mat-panel-title>
+              <strong>
+                Staff/Employees
+              </strong>
+            </mat-panel-title>
         </mat-expansion-panel-header>
 
           <a mat-list-item href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=4345a7b9-9a63-4910-a426-35363201d503&redirect_uri=https%3A%2F%2Fwww.office.com%2Flanding&response_type=code%20id_token&scope=openid%20profile&response_mode=form_post&nonce=637480696256381524.MDEwM2I2MzQtYzRjYy00M2E0LTk3YTktNDU5ODQ5OTMwM2NhYzVkYjM2OTgtYzRiYi00MjA5LTljZjItMDE0NGRkZmFjYWU2&ui_locales=en-US&mkt=en-US&client-request-id=ce581e49-9e59-45c6-9c39-99f838588c75&msafed=0&state=pgitr4cRx2a3rW_UrubC_NaldIojxw_G1tprqkciggfhVWoUPLGFt1VGKOOkSoxFGEadNoYq5QInI_dlOx4roBel9Z73lVTu4ERUTfq43haUWRvyMPAjMHcuIXqMf2OIIBzBPgn_-V4Mf199r0aqkPM06WDR9FeTIy9JFKzsDSTnGln9gtv2BqnDqiBqiU8z2M1SPwtUbfddZXL3w8wjtEKGHQDANKyDHGjgq9Xgfu1amK7JoAjPhTdh4WikrqTt6-fUDNHErYBT2CKAoSPct3BhDepjwJNvv1KeQkvYIEzliQTkEIaixocPMe4Zu7UN4xBS_YZy6JOGsqSNaZG2T9Yh0rRNLDXJHh6f765ZeYE&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.8.0.0&sso_reload=true">Office 365</a>
@@ -47,7 +53,16 @@
           <a mat-list-item href="https://login.microsoftonline.com/370a8996-6688-49f4-98df-a887ae61438c/saml2?SAMLRequest=jZHNasMwEITvgbyD0N2xIzu2JOJAaCgE0kvS9tCbKq8TgS2lWrn08esoLTQ9lN72h4%2bZ2V2i6jt2lushnOwe3gbAQD76zqK8bmo6eCudQoPSqh5QBi0P64edZLNMnr0LTruO%2fmT%2bRhQi%2bGCcpWS7qalp9CIv5zwTOVRV0bKKs0wIrtgriJLnuqLkGTyOQE1HfqQQB9haDMqGcZSxeZKxJCseWSYXQhbihZLNGMNYFSJ1CuGMMk07dzR21hvtHbo2ONsZCzPt%2bjSvMsWFKJOy5DwpRFskgjdtojivFJTzIuc6jdkoWX%2f7v3MWhx78Afy70fC03%2f2War2z4SICzaCjmahmbICjjz2mLTRwrdPLidK1RkrundcQX1LT4Aegq%2bmEkGV0IGN%2bv%2fqX1DK9YaaTr8Htw1ef&RelayState=44KMEI2XYudRblU01-KafIwj&sso_nonce=AwABAAAAAAABAOz_BAD0_9YP-3kwGWNphk5O4Owc-x3BoL-YrAU2iygDGK9VjndhTp0ASEIrEzwafbWMYHiqGAytaB7eXVTAKzNwayvRyaUgAA&client-request-id=b5fcf627-6a6a-441a-8b1d-3300c4cbb7b3&mscrid=b5fcf627-6a6a-441a-8b1d-3300c4cbb7b3">Frontline (Aesop)</a>
           <a mat-list-item href="https://portal.mncis.intocareers.org/">MCIS</a>
           <a mat-list-item href="https://www.myinfinitec.org/login">Infinitec</a>
-          <a mat-list-item href="https://mn.gov/pelsb/">PELBS (MDE Licensing)</a>
+          <a mat-list-item href="https://apefoundationahsalumni.com/">PELBS (MDE Licensing)</a>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title><strong>Community</strong></mat-panel-title>
+        </mat-expansion-panel-header>
+          <a mat-list-item href="https://austinassurance.org/">The Hormel Foundation Austin Assurance Scholarship</a>
+          <a mat-list-item href="http://apscalendarwork.weebly.com/">APS Calendar Group</a>
+          <a mat-list-item href="https://austinmn.com/">Austin Convention and Visitor Bureau</a>
+          <a mat-list-item href="https://austinmn.com/">Austin Public Education Foundation and Alumni Homepage</a>
       </mat-expansion-panel>
       <a mat-list-item href="https://myapps.microsoft.com/signin/Savvas%20%20Pearson/f79ee962-fea0-4051-ba0a-4067c8a78ec7?tenantId=370a8996-6688-49f4-98df-a887ae61438c">Savvas/Person</a>
       <a mat-list-item href="https://www.fastbridge.org">Fast Bridge</a>
@@ -59,6 +74,7 @@
       <a mat-list-item href="https://teachingstrategies.com/">TS Gold</a>
       <a mat-list-item href="https://viewpointsolution.org/Austin/app/login.aspx">ViewPoint</a>
       </mat-nav-list>
+
   </mat-sidenav>
   <mat-sidenav-content>
     <router-outlet></router-outlet>
