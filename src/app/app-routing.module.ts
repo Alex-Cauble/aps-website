@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { AustinHighInfoComponent } from './component/austin-high-info/austin-high-info.component';
 import { BanfieldInfoComponent } from './component/banfield-info/banfield-info.component';
 import { ClcInfoComponent } from './component/clc-info/clc-info.component';
-import { ContactComponent } from './component/contact/contact.component';
 import { EllisInfoComponent } from './component/ellis-info/ellis-info.component';
 import { HomeComponent } from './component/home/home.component';
 import { IjholtonInfoComponent } from './component/ijholton-info/ijholton-info.component';
@@ -14,7 +13,6 @@ import { WoodsonInfoComponent } from './component/woodson-info/woodson-info.comp
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'contact', component: ContactComponent },
   { path: 'ahs', component: AustinHighInfoComponent },
   { path: 'ellis', component: EllisInfoComponent },
   { path: 'ijholton', component: IjholtonInfoComponent },
