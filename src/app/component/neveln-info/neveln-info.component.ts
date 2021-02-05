@@ -8,6 +8,7 @@ import { Contact } from 'src/app/types/Contact.type';
 })
 export class NevelnInfoComponent {
   title = 'Neveln Elementary School';
+  principal = 'David Wolff';
 
   contacts: Contact[] = [
     { name: 'Phone', number: '(507)-460-1600' },

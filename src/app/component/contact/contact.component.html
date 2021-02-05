@@ -1,15 +1,7 @@
 <section>
   <h1>{{ title }}</h1>
   <mat-list>
-    <app-contact-item *ngFor="let contact of contacts" [name]="contact.name" [number]="contact.number"></app-contact-item>
-    <!-- <mat-list-item>Phone: <span>(000)-000-000</span></mat-list-item>
-    <mat-list-item>Fax: <span>(000)-000-000</span></mat-list-item>
-    <mat-list-item>School Hours: <span>(000)-000-000</span></mat-list-item>
-    <mat-list-item>Athletics/Activities: <span>(000)-000-000</span></mat-list-item>
-    <mat-list-item>Principal: <span>(000)-000-000</span></mat-list-item>
-    <mat-list-item>Attendance: <span>(000)-000-000</span></mat-list-item>
-    <mat-list-item>Counseling: <span>(000)-000-000</span></mat-list-item>
-    <mat-list-item>District Enrollment: <span>(000)-000-000</span></mat-list-item>
-    <mat-list-item>Cashier: <span>(000)-000-000</span></mat-list-item> -->
+    <mat-list-item *ngIf="principal">Principal <span><strong>{{ principal }}</strong></span></mat-list-item>
+    <app-contact-item *ngFor="let contact of contacts" [name]="contact.name" [coordinator]="contact.coordinator ? contact.coordinator : ''" [number]="contact.number"></app-contact-item>
   </mat-list>
 </section>

@@ -8,6 +8,7 @@ import { Contact } from 'src/app/types/Contact.type';
 })
 export class ContactComponent {
   @Input() title: string = '';
+  @Input() principal: string | undefined;
   @Input() contacts: Contact[] = [];
   constructor() {}
 }

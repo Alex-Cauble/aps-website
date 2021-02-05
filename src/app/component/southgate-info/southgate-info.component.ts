@@ -8,6 +8,7 @@ import { Contact } from 'src/app/types/Contact.type';
 })
 export class SouthgateInfoComponent {
   title = 'Southgate Elementary School';
+  principal = 'Katie Baskin';
   contacts: Contact[] = [
     { name: 'Phone', number: '(507)-460-1300' },
     { name: 'Fax', number: '(507)-433-9651' },

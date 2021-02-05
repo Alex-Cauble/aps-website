@@ -7,6 +7,7 @@ import { Contact } from 'src/app/types/Contact.type';
   styleUrls: ['./ellis-info.component.scss'],
 })
 export class EllisInfoComponent implements OnInit {
+  principal = 'Jessica Cabeen';
   title = 'Ellis Middle School';
   contacts: Contact[] = [
     { name: 'Phone', number: '(507)-460-1500' },

@@ -7,6 +7,7 @@ import { Contact } from 'src/app/types/Contact.type';
   styleUrls: ['./banfield-info.component.scss'],
 })
 export class BanfieldInfoComponent {
+  principal = 'Jeff Roland';
   title = 'Banfield Elementeary School';
   contacts: Contact[] = [
     { name: 'Phone', number: '(507)-460-1200' },

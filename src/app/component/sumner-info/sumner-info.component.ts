@@ -7,6 +7,7 @@ import { Contact } from 'src/app/types/Contact.type';
   styleUrls: ['./sumner-info.component.scss'],
 })
 export class SumnerInfoComponent {
+  principal = 'Sheila Berger';
   title = 'Sumner Elementary School';
   contacts: Contact[] = [
     { name: 'Phone', number: '(507)-460-1100' },

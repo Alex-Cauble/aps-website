@@ -7,6 +7,7 @@ import { Contact } from 'src/app/types/Contact.type';
   styleUrls: ['./woodson-info.component.scss'],
 })
 export class WoodsonInfoComponent {
+  principal = 'Jill Rollie';
   title = 'Woodson Kindergarten Center';
   contacts: Contact[] = [
     { name: 'Phone', number: '(507)-460-1400' },

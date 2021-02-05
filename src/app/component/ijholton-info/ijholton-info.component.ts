@@ -7,6 +7,7 @@ import { Contact } from 'src/app/types/Contact.type';
   styleUrls: ['./ijholton-info.component.scss'],
 })
 export class IjholtonInfoComponent {
+  principal = 'Dewey Schara';
   title = 'IJ Holton Intermediate School';
   contacts: Contact[] = [
     { name: 'Phone', number: '(507)-460-1525' },

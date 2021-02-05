@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Contact } from 'src/app/types/Contact.type';
 
 @Component({
@@ -8,9 +8,11 @@ import { Contact } from 'src/app/types/Contact.type';
 })
 export class AustinHighInfoComponent {
   title = 'Austin High School';
+  principal = 'Andrea Malo';
   contacts: Contact[] = [
     { name: 'Phone', number: '(507)-460-1800' },
     { name: 'Fax', number: '(507)-355-2415' },
+    { name: 'Activities', number: '(507)-460-1825' },
     { name: 'Attendance', number: '(507)-460-1806' },
     { name: 'Counseling', number: '(507)-460-1812' },
     { name: 'Food Service', number: '(507)-460-1821' },
