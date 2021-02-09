@@ -31,6 +31,7 @@ import { ClcInfoComponent } from './component/clc-info/clc-info.component';
 import { SumnerInfoComponent } from './component/sumner-info/sumner-info.component';
 import { ContactItemComponent } from './component/contact-item/contact-item.component';
 import { SchoolBoardComponent } from './component/school-board/school-board.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { SchoolBoardComponent } from './component/school-board/school-board.comp
     SchoolBoardComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
