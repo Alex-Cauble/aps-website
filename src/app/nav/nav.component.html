@@ -9,8 +9,9 @@
       </button>
       <img src="../../assets/APS_white.png" style="height: 100%;">
       <button id="header-text" mat-button class="pointer" routerLink="home">Austin Public Schools</button>
+      <span style="margin: auto" *ngIf="!(isHandset$ |async)">Site Under Construction</span>
     </mat-toolbar>
-    <mat-toolbar class="construction">
+    <mat-toolbar class="construction" *ngIf="(isHandset$ |async)">
       Site Under Construction
     </mat-toolbar>
 <mat-sidenav-container  class="sidenav-container">
@@ -130,6 +131,7 @@
       <button style="width: 100%; text-align: left;" routerLink="board" mat-button><Strong>School Board</Strong></button>
   </mat-sidenav>
   <mat-sidenav-content>
+    <app-alert></app-alert>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
