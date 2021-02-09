@@ -9,8 +9,9 @@
       </button>
       <img src="../../assets/APS_white.png" style="height: 100%;">
       <button id="header-text" mat-button class="pointer" routerLink="home">Austin Public Schools</button>
+      <span style="margin: auto" *ngIf="!(isHandset$ |async)">Site Under Construction</span>
     </mat-toolbar>
-    <mat-toolbar class="construction">
+    <mat-toolbar class="construction" *ngIf="(isHandset$ |async)">
       Site Under Construction
     </mat-toolbar>
 <mat-sidenav-container  class="sidenav-container">
@@ -83,16 +84,16 @@
         <mat-expansion-panel-header>
           <mat-panel-title><strong>Schools</strong></mat-panel-title>
         </mat-expansion-panel-header>
-        <a mat-list-item routerLink="ahs">Austin High</a>
-        <a mat-list-item routerLink="ellis">Ellis</a>
-        <a mat-list-item routerLink="ijholton">IJ Holton</a>
-        <a mat-list-item routerLink="banfield">Banfield</a>
-        <a mat-list-item routerLink="neveln">Neveln</a>
-        <a mat-list-item routerLink="southgate">Southgate</a>
-        <a mat-list-item routerLink="sumner">Sumner</a>
-        <a mat-list-item routerLink="woodson">Woodson</a>
-        <a mat-list-item routerLink="clc">CLC</a>
-        <a mat-list-item routerLink="ahs">Area Learning Center</a>
+        <a mat-list-item routerLink="ahs" (click)="drawer.toggle()">Austin High</a>
+        <a mat-list-item routerLink="ellis" (click)="drawer.toggle()">Ellis</a>
+        <a mat-list-item routerLink="ijholton" (click)="drawer.toggle()">IJ Holton</a>
+        <a mat-list-item routerLink="banfield" (click)="drawer.toggle()">Banfield</a>
+        <a mat-list-item routerLink="neveln" (click)="drawer.toggle()">Neveln</a>
+        <a mat-list-item routerLink="southgate" (click)="drawer.toggle()">Southgate</a>
+        <a mat-list-item routerLink="sumner" (click)="drawer.toggle()">Sumner</a>
+        <a mat-list-item routerLink="woodson" (click)="drawer.toggle()">Woodson</a>
+        <a mat-list-item routerLink="clc" (click)="drawer.toggle()">CLC</a>
+        <a mat-list-item routerLink="ahs" (click)="drawer.toggle()">Area Learning Center</a>
       </mat-expansion-panel>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
@@ -130,6 +131,7 @@
       <button style="width: 100%; text-align: left;" routerLink="board" mat-button><Strong>School Board</Strong></button>
   </mat-sidenav>
   <mat-sidenav-content>
+    <app-alert></app-alert>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
