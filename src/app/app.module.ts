@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  BrowserAnimationsModule,
+  NoopAnimationsModule,
+} from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -52,7 +55,7 @@ import { SchoolBoardComponent } from './component/school-board/school-board.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NoopAnimationsModule,
+    BrowserAnimationsModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
