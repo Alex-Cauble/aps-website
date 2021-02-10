@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "dev": "ng serve -o",
     "build": "ng build",
     "build:prod": "ng build --prod --base-href=https://austin.k12.mn.us/",
     "test": "ng test",
