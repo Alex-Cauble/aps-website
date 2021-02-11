@@ -22,3 +22,7 @@ a {
 :host::ng-deep a {
   margin: 8px 0;
 }
+
+:host::ng-deep .mat-list-base .mat-list-item .mat-list-item-content {
+  justify-content: center;
+}

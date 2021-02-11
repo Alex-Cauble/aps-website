@@ -1,134 +1,245 @@
-    <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <img src="../../assets/APS_white.png" style="height: 100%;">
-      <button id="header-text" mat-button class="pointer" routerLink="home">Austin Public Schools</button>
-      <span style="margin: auto" *ngIf="!(isHandset$ |async)">Site Under Construction</span>
-    </mat-toolbar>
-    <mat-toolbar class="construction" *ngIf="(isHandset$ |async)">
-      Site Under Construction
-    </mat-toolbar>
-<mat-sidenav-container  class="sidenav-container">
-  <mat-sidenav autosize #drawer class="sidenav"
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
+<mat-toolbar color="primary">
+  <button
+    type="button"
+    aria-label="Toggle sidenav"
+    mat-icon-button
+    (click)="drawer.toggle()"
+    *ngIf="isHandset$ | async"
+  >
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button>
+  <img src="../../assets/APS_white.png" style="height: 100%" />
+  <button id="header-text" mat-button class="pointer" routerLink="home">
+    Austin Public Schools
+  </button>
+  <span style="margin: auto" *ngIf="!(isHandset$ | async)"
+    >Site Under Construction</span
+  >
+</mat-toolbar>
+<mat-toolbar class="construction" *ngIf="isHandset$ | async">
+  Site Under Construction
+</mat-toolbar>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    autosize
+    #drawer
+    class="sidenav"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
     <mat-nav-list>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-        <mat-panel-title>
-          <strong>
-            Student Resources
-          </strong>
-        </mat-panel-title>
-        </mat-expansion-panel-header>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <strong> Student Resources </strong>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
 
-      <a mat-list-item href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=4345a7b9-9a63-4910-a426-35363201d503&redirect_uri=https%3A%2F%2Fwww.office.com%2Flanding&response_type=code%20id_token&scope=openid%20profile&response_mode=form_post&nonce=637480696256381524.MDEwM2I2MzQtYzRjYy00M2E0LTk3YTktNDU5ODQ5OTMwM2NhYzVkYjM2OTgtYzRiYi00MjA5LTljZjItMDE0NGRkZmFjYWU2&ui_locales=en-US&mkt=en-US&client-request-id=ce581e49-9e59-45c6-9c39-99f838588c75&msafed=0&state=pgitr4cRx2a3rW_UrubC_NaldIojxw_G1tprqkciggfhVWoUPLGFt1VGKOOkSoxFGEadNoYq5QInI_dlOx4roBel9Z73lVTu4ERUTfq43haUWRvyMPAjMHcuIXqMf2OIIBzBPgn_-V4Mf199r0aqkPM06WDR9FeTIy9JFKzsDSTnGln9gtv2BqnDqiBqiU8z2M1SPwtUbfddZXL3w8wjtEKGHQDANKyDHGjgq9Xgfu1amK7JoAjPhTdh4WikrqTt6-fUDNHErYBT2CKAoSPct3BhDepjwJNvv1KeQkvYIEzliQTkEIaixocPMe4Zu7UN4xBS_YZy6JOGsqSNaZG2T9Yh0rRNLDXJHh6f765ZeYE&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.8.0.0&sso_reload=true">Office 365</a>
-      <a mat-list-item href="https://infinitecampus.austin.k12.mn.us/campus/portal/austin.jsp">Student Portal</a>
-      <a mat-list-item href="https://isd492.schoology.com/login/ldap?&school=572275569">Schoology</a>
-      <a mat-list-item href="https://app.seesaw.me/">Seesaw</a>
-      <a mat-list-item href="https://myapps.microsoft.com/signin/McGraw-Hill/491bdf6d-b35f-4b54-98da-335578d7f21f?tenantId=370a8996-6688-49f4-98df-a887ae61438c">McGraw-Hill</a>
-      <a mat-list-item href="https://myapps.microsoft.com/signin/Savvas%20%20Pearson/f79ee962-fea0-4051-ba0a-4067c8a78ec7?tenantId=370a8996-6688-49f4-98df-a887ae61438c">Savvas/Pearson</a>
-      <a mat-list-item href="https://nearpod.com/">Nearpod</a>
-      <a mat-list-item href="https://languagelive.voyagersopris.com/services/logon">Language! Live</a>
-      <a mat-list-item href="https://www.raz-kids.com/">Raz Kids</a>
-      <a mat-list-item href="https://my.hrw.com/">Holt Online</a>
-      <a mat-list-item href="https://portal.mncis.intocareers.org/">MCIS</a>
-      <a mat-list-item href="https://itconnect.austin.k12.mn.us/">Connect Wise</a>
-      <a mat-list-item href="https://ras.austin.k12.mn.us/">Proxy Pro</a>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-        <mat-panel-title>
-          <strong>
-            Family Resources
-          </strong>
-        </mat-panel-title>
-        </mat-expansion-panel-header>
+          <a
+            mat-list-item
+            href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=4345a7b9-9a63-4910-a426-35363201d503&redirect_uri=https%3A%2F%2Fwww.office.com%2Flanding&response_type=code%20id_token&scope=openid%20profile&response_mode=form_post&nonce=637480696256381524.MDEwM2I2MzQtYzRjYy00M2E0LTk3YTktNDU5ODQ5OTMwM2NhYzVkYjM2OTgtYzRiYi00MjA5LTljZjItMDE0NGRkZmFjYWU2&ui_locales=en-US&mkt=en-US&client-request-id=ce581e49-9e59-45c6-9c39-99f838588c75&msafed=0&state=pgitr4cRx2a3rW_UrubC_NaldIojxw_G1tprqkciggfhVWoUPLGFt1VGKOOkSoxFGEadNoYq5QInI_dlOx4roBel9Z73lVTu4ERUTfq43haUWRvyMPAjMHcuIXqMf2OIIBzBPgn_-V4Mf199r0aqkPM06WDR9FeTIy9JFKzsDSTnGln9gtv2BqnDqiBqiU8z2M1SPwtUbfddZXL3w8wjtEKGHQDANKyDHGjgq9Xgfu1amK7JoAjPhTdh4WikrqTt6-fUDNHErYBT2CKAoSPct3BhDepjwJNvv1KeQkvYIEzliQTkEIaixocPMe4Zu7UN4xBS_YZy6JOGsqSNaZG2T9Yh0rRNLDXJHh6f765ZeYE&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.8.0.0&sso_reload=true"
+            >Office 365</a
+          >
+          <a
+            mat-list-item
+            href="https://infinitecampus.austin.k12.mn.us/campus/portal/austin.jsp"
+            >Student Portal</a
+          >
+          <a
+            mat-list-item
+            href="https://isd492.schoology.com/login/ldap?&school=572275569"
+            >Schoology</a
+          >
+          <a mat-list-item href="https://app.seesaw.me/">Seesaw</a>
+          <a
+            mat-list-item
+            href="https://myapps.microsoft.com/signin/McGraw-Hill/491bdf6d-b35f-4b54-98da-335578d7f21f?tenantId=370a8996-6688-49f4-98df-a887ae61438c"
+            >McGraw-Hill</a
+          >
+          <a
+            mat-list-item
+            href="https://myapps.microsoft.com/signin/Savvas%20%20Pearson/f79ee962-fea0-4051-ba0a-4067c8a78ec7?tenantId=370a8996-6688-49f4-98df-a887ae61438c"
+            >Savvas/Pearson</a
+          >
+          <a mat-list-item href="https://nearpod.com/">Nearpod</a>
+          <a
+            mat-list-item
+            href="https://languagelive.voyagersopris.com/services/logon"
+            >Language! Live</a
+          >
+          <a mat-list-item href="https://www.raz-kids.com/">Raz Kids</a>
+          <a mat-list-item href="https://my.hrw.com/">Holt Online</a>
+          <a mat-list-item href="https://portal.mncis.intocareers.org/">MCIS</a>
+          <a mat-list-item href="https://itconnect.austin.k12.mn.us/"
+            >Connect Wise</a
+          >
+          <a mat-list-item href="https://ras.austin.k12.mn.us/">Proxy Pro</a>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <strong> Family Resources </strong>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
 
-      <a mat-list-item href="https://infinitecampus.austin.k12.mn.us/campus/portal/austin.jsp">Parent Portal</a>
-      <a mat-list-item href="https://isd492.schoology.com/login/ldap?&school=572275569">Schoology</a>
-      <a mat-list-item href="https://www.mypaymentsplus.com/welcome">School Lunch Payment</a>
-      <a mat-list-item href="https://austin.nutrislice.com/menus-eula">School Lunch Menu</a>
-      </mat-expansion-panel>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <strong>
-          Employee Resources
-        </strong>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
+          <a
+            mat-list-item
+            href="https://infinitecampus.austin.k12.mn.us/campus/portal/austin.jsp"
+            >Parent Portal</a
+          >
+          <a
+            mat-list-item
+            href="https://isd492.schoology.com/login/ldap?&school=572275569"
+            >Schoology</a
+          >
+          <a mat-list-item href="https://www.mypaymentsplus.com/welcome"
+            >School Lunch Payment</a
+          >
+          <a mat-list-item href="https://austin.nutrislice.com/menus-eula"
+            >School Lunch Menu</a
+          >
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <strong> Employee Resources </strong>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
 
-    <a mat-list-item
-      href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=4345a7b9-9a63-4910-a426-35363201d503&redirect_uri=https%3A%2F%2Fwww.office.com%2Flanding&response_type=code%20id_token&scope=openid%20profile&response_mode=form_post&nonce=637480696256381524.MDEwM2I2MzQtYzRjYy00M2E0LTk3YTktNDU5ODQ5OTMwM2NhYzVkYjM2OTgtYzRiYi00MjA5LTljZjItMDE0NGRkZmFjYWU2&ui_locales=en-US&mkt=en-US&client-request-id=ce581e49-9e59-45c6-9c39-99f838588c75&msafed=0&state=pgitr4cRx2a3rW_UrubC_NaldIojxw_G1tprqkciggfhVWoUPLGFt1VGKOOkSoxFGEadNoYq5QInI_dlOx4roBel9Z73lVTu4ERUTfq43haUWRvyMPAjMHcuIXqMf2OIIBzBPgn_-V4Mf199r0aqkPM06WDR9FeTIy9JFKzsDSTnGln9gtv2BqnDqiBqiU8z2M1SPwtUbfddZXL3w8wjtEKGHQDANKyDHGjgq9Xgfu1amK7JoAjPhTdh4WikrqTt6-fUDNHErYBT2CKAoSPct3BhDepjwJNvv1KeQkvYIEzliQTkEIaixocPMe4Zu7UN4xBS_YZy6JOGsqSNaZG2T9Yh0rRNLDXJHh6f765ZeYE&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.8.0.0&sso_reload=true">Office
-      365</a>
-    <a mat-list-item href="https://infinitecampus.austin.k12.mn.us/campus/austin.jsp">Infinite Campus</a>
-    <a mat-list-item
-      href="https://employeeaccess.austin.k12.mn.us/scripts/cgiip.exe/WService=wsFin/seplog01.w">Employee Access</a>
-    <a mat-list-item href="#">TrackIT - IT Request</a>
-    <a mat-list-item
-      href="https://login.microsoftonline.com/370a8996-6688-49f4-98df-a887ae61438c/saml2?SAMLRequest=jZHNasMwEITvgbyD0N2xIzu2JOJAaCgE0kvS9tCbKq8TgS2lWrn08esoLTQ9lN72h4%2bZ2V2i6jt2lushnOwe3gbAQD76zqK8bmo6eCudQoPSqh5QBi0P64edZLNMnr0LTruO%2fmT%2bRhQi%2bGCcpWS7qalp9CIv5zwTOVRV0bKKs0wIrtgriJLnuqLkGTyOQE1HfqQQB9haDMqGcZSxeZKxJCseWSYXQhbihZLNGMNYFSJ1CuGMMk07dzR21hvtHbo2ONsZCzPt%2bjSvMsWFKJOy5DwpRFskgjdtojivFJTzIuc6jdkoWX%2f7v3MWhx78Afy70fC03%2f2War2z4SICzaCjmahmbICjjz2mLTRwrdPLidK1RkrundcQX1LT4Aegq%2bmEkGV0IGN%2bv%2fqX1DK9YaaTr8Htw1ef&RelayState=44KMEI2XYudRblU01-KafIwj&sso_nonce=AwABAAAAAAABAOz_BAD0_9YP-3kwGWNphk5O4Owc-x3BoL-YrAU2iygDGK9VjndhTp0ASEIrEzwafbWMYHiqGAytaB7eXVTAKzNwayvRyaUgAA&client-request-id=b5fcf627-6a6a-441a-8b1d-3300c4cbb7b3&mscrid=b5fcf627-6a6a-441a-8b1d-3300c4cbb7b3">Frontline
-      (Aesop)</a>
-    <a mat-list-item href="https://portal.mncis.intocareers.org/">MCIS</a>
-    <a mat-list-item href="https://www.myinfinitec.org/login">Infinitec</a>
-    <a mat-list-item href="https://apefoundationahsalumni.com/">PELBS (MDE Licensing)</a>
-  </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title><strong>Schools</strong></mat-panel-title>
-        </mat-expansion-panel-header>
-        <a mat-list-item routerLink="ahs">Austin High</a>
-        <a mat-list-item routerLink="ellis" >Ellis</a>
-        <a mat-list-item routerLink="ijholton" >IJ Holton</a>
-        <a mat-list-item routerLink="banfield" >Banfield</a>
-        <a mat-list-item routerLink="neveln" >Neveln</a>
-        <a mat-list-item routerLink="southgate" >Southgate</a>
-        <a mat-list-item routerLink="sumner" >Sumner</a>
-        <a mat-list-item routerLink="woodson" >Woodson</a>
-        <a mat-list-item routerLink="clc" >CLC</a>
-        <a mat-list-item routerLink="ahs" >Area Learning Center</a>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title><strong>District Departments</strong></mat-panel-title>
-        </mat-expansion-panel-header>
-        <button mat-button>Superintendent <a href="tel:15074601900">(507)-460-1900</a></button>
-        <button mat-button>Activities <a href="tel:15074601825">(507)-460-1825</a></button>
-        <button mat-button>Educational Services <a href="tel:15074601912">(507)-460-1912</a></button>
-        <button mat-button>Enrollment Office <a href="tel:15074601937">(507)-460-1937</a></button>
-        <button mat-button>Facility Services <a href="tel:15074601928">(507)-460-1928</a></button>
-        <button mat-button>Dome Coordinator <a href="tel:15074601927">(507)-460-1927</a></button>
-        <button mat-button>Food & Nutrition <a href="tel:15074601919">(507)-460-1919</a></button>
-        <button mat-button>Human Resources <a href="tel:15074601912">(507)-460-1912</a></button>
-        <button mat-button>Technology Services <a href="tel:15074601930">(507)-460-1930</a></button>
-        <button mat-button>Special Services <a href="tel:15074601916">(507)-460-1916</a></button>
-        <button mat-button>Research & Assessment <a href="tel:15074601933">(507)-460-1933</a></button>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title><strong>Community</strong></mat-panel-title>
-        </mat-expansion-panel-header>
-          <a mat-list-item href="https://austinassurance.org/">The Hormel Foundation Austin Assurance Scholarship</a>
-          <a mat-list-item href="http://apscalendarwork.weebly.com/">APS Calendar Group</a>
-          <a mat-list-item href="https://austinmn.com/">Austin Convention and Visitor Bureau</a>
-          <a mat-list-item href="https://austinmn.com/">Austin Public Education Foundation and Alumni Homepage</a>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title><strong>Employment</strong></mat-panel-title>
-        </mat-expansion-panel-header>
-        <a mat-list-item href="https://www.applitrack.com/austink12/onlineapp/jobpostings/view.asp?internaltransferform.Url=">Open Positions</a>
-        <a mat-list-item href="https://www.applitrack.com/austink12/onlineapp/_application.aspx?starting=true">Apply Now</a>
-      </mat-expansion-panel>
-      </mat-nav-list>
-      <button style="width: 100%; text-align: left;" routerLink="board" mat-button><Strong>School Board</Strong></button>
+          <a
+            mat-list-item
+            href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=4345a7b9-9a63-4910-a426-35363201d503&redirect_uri=https%3A%2F%2Fwww.office.com%2Flanding&response_type=code%20id_token&scope=openid%20profile&response_mode=form_post&nonce=637480696256381524.MDEwM2I2MzQtYzRjYy00M2E0LTk3YTktNDU5ODQ5OTMwM2NhYzVkYjM2OTgtYzRiYi00MjA5LTljZjItMDE0NGRkZmFjYWU2&ui_locales=en-US&mkt=en-US&client-request-id=ce581e49-9e59-45c6-9c39-99f838588c75&msafed=0&state=pgitr4cRx2a3rW_UrubC_NaldIojxw_G1tprqkciggfhVWoUPLGFt1VGKOOkSoxFGEadNoYq5QInI_dlOx4roBel9Z73lVTu4ERUTfq43haUWRvyMPAjMHcuIXqMf2OIIBzBPgn_-V4Mf199r0aqkPM06WDR9FeTIy9JFKzsDSTnGln9gtv2BqnDqiBqiU8z2M1SPwtUbfddZXL3w8wjtEKGHQDANKyDHGjgq9Xgfu1amK7JoAjPhTdh4WikrqTt6-fUDNHErYBT2CKAoSPct3BhDepjwJNvv1KeQkvYIEzliQTkEIaixocPMe4Zu7UN4xBS_YZy6JOGsqSNaZG2T9Yh0rRNLDXJHh6f765ZeYE&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.8.0.0&sso_reload=true"
+            >Office 365</a
+          >
+          <a
+            mat-list-item
+            href="https://infinitecampus.austin.k12.mn.us/campus/austin.jsp"
+            >Infinite Campus</a
+          >
+          <a
+            mat-list-item
+            href="https://employeeaccess.austin.k12.mn.us/scripts/cgiip.exe/WService=wsFin/seplog01.w"
+            >Employee Access</a
+          >
+          <a mat-list-item href="#">TrackIT - IT Request</a>
+          <a
+            mat-list-item
+            href="https://login.microsoftonline.com/370a8996-6688-49f4-98df-a887ae61438c/saml2?SAMLRequest=jZHNasMwEITvgbyD0N2xIzu2JOJAaCgE0kvS9tCbKq8TgS2lWrn08esoLTQ9lN72h4%2bZ2V2i6jt2lushnOwe3gbAQD76zqK8bmo6eCudQoPSqh5QBi0P64edZLNMnr0LTruO%2fmT%2bRhQi%2bGCcpWS7qalp9CIv5zwTOVRV0bKKs0wIrtgriJLnuqLkGTyOQE1HfqQQB9haDMqGcZSxeZKxJCseWSYXQhbihZLNGMNYFSJ1CuGMMk07dzR21hvtHbo2ONsZCzPt%2bjSvMsWFKJOy5DwpRFskgjdtojivFJTzIuc6jdkoWX%2f7v3MWhx78Afy70fC03%2f2War2z4SICzaCjmahmbICjjz2mLTRwrdPLidK1RkrundcQX1LT4Aegq%2bmEkGV0IGN%2bv%2fqX1DK9YaaTr8Htw1ef&RelayState=44KMEI2XYudRblU01-KafIwj&sso_nonce=AwABAAAAAAABAOz_BAD0_9YP-3kwGWNphk5O4Owc-x3BoL-YrAU2iygDGK9VjndhTp0ASEIrEzwafbWMYHiqGAytaB7eXVTAKzNwayvRyaUgAA&client-request-id=b5fcf627-6a6a-441a-8b1d-3300c4cbb7b3&mscrid=b5fcf627-6a6a-441a-8b1d-3300c4cbb7b3"
+            >Frontline (Aesop)</a
+          >
+          <a mat-list-item href="https://portal.mncis.intocareers.org/">MCIS</a>
+          <a mat-list-item href="https://www.myinfinitec.org/login"
+            >Infinitec</a
+          >
+          <a mat-list-item href="https://apefoundationahsalumni.com/"
+            >PELBS (MDE Licensing)</a
+          >
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title><strong>Schools</strong></mat-panel-title>
+          </mat-expansion-panel-header>
+          <a mat-list-item routerLink="ahs">Austin High</a>
+          <a mat-list-item routerLink="ellis">Ellis</a>
+          <a mat-list-item routerLink="ijholton">IJ Holton</a>
+          <a mat-list-item routerLink="banfield">Banfield</a>
+          <a mat-list-item routerLink="neveln">Neveln</a>
+          <a mat-list-item routerLink="southgate">Southgate</a>
+          <a mat-list-item routerLink="sumner">Sumner</a>
+          <a mat-list-item routerLink="woodson">Woodson</a>
+          <a mat-list-item routerLink="clc">CLC</a>
+          <a mat-list-item routerLink="ahs">Area Learning Center</a>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title
+              ><strong>District Departments</strong></mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <button mat-button>
+            Superintendent <a href="tel:15074601900">(507)-460-1900</a>
+          </button>
+          <button mat-button>
+            Activities <a href="tel:15074601825">(507)-460-1825</a>
+          </button>
+          <button mat-button>
+            Educational Services <a href="tel:15074601912">(507)-460-1912</a>
+          </button>
+          <button mat-button>
+            Enrollment Office <a href="tel:15074601937">(507)-460-1937</a>
+          </button>
+          <button mat-button>
+            Facility Services <a href="tel:15074601928">(507)-460-1928</a>
+          </button>
+          <button mat-button>
+            Dome Coordinator <a href="tel:15074601927">(507)-460-1927</a>
+          </button>
+          <button mat-button>
+            Food & Nutrition <a href="tel:15074601919">(507)-460-1919</a>
+          </button>
+          <button mat-button>
+            Human Resources <a href="tel:15074601912">(507)-460-1912</a>
+          </button>
+          <button mat-button>
+            Technology Services <a href="tel:15074601930">(507)-460-1930</a>
+          </button>
+          <button mat-button>
+            Special Services <a href="tel:15074601916">(507)-460-1916</a>
+          </button>
+          <button mat-button>
+            Research & Assessment <a href="tel:15074601933">(507)-460-1933</a>
+          </button>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title><strong>Community</strong></mat-panel-title>
+          </mat-expansion-panel-header>
+          <a mat-list-item href="https://austinassurance.org/"
+            >The Hormel Foundation Austin Assurance Scholarship</a
+          >
+          <a mat-list-item href="http://apscalendarwork.weebly.com/"
+            >APS Calendar Group</a
+          >
+          <a mat-list-item href="https://austinmn.com/"
+            >Austin Convention and Visitor Bureau</a
+          >
+          <a mat-list-item href="https://austinmn.com/"
+            >Austin Public Education Foundation and Alumni Homepage</a
+          >
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title><strong>Employment</strong></mat-panel-title>
+          </mat-expansion-panel-header>
+          <a
+            mat-list-item
+            href="https://www.applitrack.com/austink12/onlineapp/jobpostings/view.asp?internaltransferform.Url="
+            >Open Positions</a
+          >
+          <a
+            mat-list-item
+            href="https://www.applitrack.com/austink12/onlineapp/_application.aspx?starting=true"
+            >Apply Now</a
+          >
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-nav-list>
+    <button
+      style="width: 100%; text-align: left; padding: 0 24px"
+      routerLink="calendars"
+      mat-button
+    >
+      <strong>Calendars</strong>
+    </button>
+    <button
+      style="width: 100%; text-align: left; padding: 0 24px"
+      routerLink="board"
+      mat-button
+    >
+      <Strong>School Board</Strong>
+    </button>
   </mat-sidenav>
   <mat-sidenav-content>
     <app-alert></app-alert>

@@ -18,7 +18,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './component/home/home.component';
 import { ContactComponent } from './component/contact/contact.component';
-import { SchoolDropDownComponent } from './component/school-drop-down/school-drop-down.component';
 import { AlertComponent } from './component/alert/alert.component';
 import { AustinHighInfoComponent } from './component/austin-high-info/austin-high-info.component';
 import { EllisInfoComponent } from './component/ellis-info/ellis-info.component';
@@ -32,6 +31,7 @@ import { SumnerInfoComponent } from './component/sumner-info/sumner-info.compone
 import { ContactItemComponent } from './component/contact-item/contact-item.component';
 import { SchoolBoardComponent } from './component/school-board/school-board.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CalendarsComponent } from './component/calendars/calendars.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,6 @@ import { HttpClientModule } from '@angular/common/http';
     NavComponent,
     HomeComponent,
     ContactComponent,
-    SchoolDropDownComponent,
     AlertComponent,
     AustinHighInfoComponent,
     EllisInfoComponent,
@@ -52,6 +51,7 @@ import { HttpClientModule } from '@angular/common/http';
     SumnerInfoComponent,
     ContactItemComponent,
     SchoolBoardComponent,
+    CalendarsComponent,
   ],
   imports: [
     HttpClientModule,

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AustinHighInfoComponent } from './component/austin-high-info/austin-high-info.component';
 import { BanfieldInfoComponent } from './component/banfield-info/banfield-info.component';
+import { CalendarsComponent } from './component/calendars/calendars.component';
 import { ClcInfoComponent } from './component/clc-info/clc-info.component';
 import { EllisInfoComponent } from './component/ellis-info/ellis-info.component';
 import { HomeComponent } from './component/home/home.component';
@@ -14,16 +15,17 @@ import { WoodsonInfoComponent } from './component/woodson-info/woodson-info.comp
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'board', component: SchoolBoardComponent },
   { path: 'ahs', component: AustinHighInfoComponent },
+  { path: 'calendars', component: CalendarsComponent },
+  { path: 'clc', component: ClcInfoComponent },
+  { path: 'banfield', component: BanfieldInfoComponent },
+  { path: 'board', component: SchoolBoardComponent },
   { path: 'ellis', component: EllisInfoComponent },
   { path: 'ijholton', component: IjholtonInfoComponent },
-  { path: 'banfield', component: BanfieldInfoComponent },
   { path: 'neveln', component: NevelnInfoComponent },
   { path: 'southgate', component: SouthgateInfoComponent },
   { path: 'sumner', component: SumnerInfoComponent },
   { path: 'woodson', component: WoodsonInfoComponent },
-  { path: 'clc', component: ClcInfoComponent },
   { path: '**', redirectTo: 'home' },
 ];
 
