@@ -32,6 +32,7 @@ import { ContactItemComponent } from './component/contact-item/contact-item.comp
 import { SchoolBoardComponent } from './component/school-board/school-board.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CalendarsComponent } from './component/calendars/calendars.component';
+import { BidsComponent } from './component/bids/bids.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { CalendarsComponent } from './component/calendars/calendars.component';
     ContactItemComponent,
     SchoolBoardComponent,
     CalendarsComponent,
+    BidsComponent,
   ],
   imports: [
     HttpClientModule,

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AustinHighInfoComponent } from './component/austin-high-info/austin-high-info.component';
 import { BanfieldInfoComponent } from './component/banfield-info/banfield-info.component';
+import { BidsComponent } from './component/bids/bids.component';
 import { CalendarsComponent } from './component/calendars/calendars.component';
 import { ClcInfoComponent } from './component/clc-info/clc-info.component';
 import { EllisInfoComponent } from './component/ellis-info/ellis-info.component';
@@ -16,10 +17,11 @@ import { WoodsonInfoComponent } from './component/woodson-info/woodson-info.comp
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'ahs', component: AustinHighInfoComponent },
+  { path: 'banfield', component: BanfieldInfoComponent },
+  { path: 'bids', component: BidsComponent },
+  { path: 'board', component: SchoolBoardComponent },
   { path: 'calendars', component: CalendarsComponent },
   { path: 'clc', component: ClcInfoComponent },
-  { path: 'banfield', component: BanfieldInfoComponent },
-  { path: 'board', component: SchoolBoardComponent },
   { path: 'ellis', component: EllisInfoComponent },
   { path: 'ijholton', component: IjholtonInfoComponent },
   { path: 'neveln', component: NevelnInfoComponent },
