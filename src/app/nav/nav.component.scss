@@ -57,3 +57,9 @@ md-sidenav.md-closed.md-locked-open-add-active {
 :host::ng-deep .mat-droor-inner-container {
   max-height: 100% !important;
 }
+
+.nav-button {
+  width: 100%;
+  text-align: left;
+  padding: 0 24px;
+}

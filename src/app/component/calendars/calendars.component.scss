@@ -1,28 +1,23 @@
 $white: white;
+h3 {
+  margin: 25px;
+  text-align: center;
+}
 mat-list {
   max-width: 500px;
   margin: auto;
   margin-top: 15px;
-}
-
-a {
-  background-color: $white;
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 3px;
-  margin: 5px, 0;
-  &:hover {
-    background: darken($white, 10%);
+  a {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    max-width: 90vw;
+    margin: 8px auto;
+    &:hover {
+      background: darken($white, 10%);
+    }
+    span {
+      margin-left: auto;
+    }
   }
-  span {
-    margin-left: auto;
-  }
-}
-
-:host::ng-deep a {
-  margin: 8px 0;
-}
-
-:host::ng-deep .mat-list-base .mat-list-item .mat-list-item-content {
-  justify-content: center;
 }
