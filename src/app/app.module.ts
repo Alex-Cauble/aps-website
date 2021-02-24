@@ -14,7 +14,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './component/home/home.component';
-import { ContactComponent } from './component/building-contact/building-contact.component';
+import { BuildingContactComponent } from './component/building-contact/building-contact.component';
 import { AlertComponent } from './component/alert/alert.component';
 import { ContactItemComponent } from './component/contact-item/contact-item.component';
 import { SchoolBoardComponent } from './component/school-board/school-board.component';
@@ -27,7 +27,7 @@ import { BidsComponent } from './component/bids/bids.component';
     AppComponent,
     NavComponent,
     HomeComponent,
-    ContactComponent,
+    BuildingContactComponent,
     AlertComponent,
     ContactItemComponent,
     SchoolBoardComponent,

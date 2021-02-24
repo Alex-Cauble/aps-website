@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BidsComponent } from './component/bids/bids.component';
-import { ContactComponent } from './component/building-contact/building-contact.component';
+import { BuildingContactComponent } from './component/building-contact/building-contact.component';
 import { CalendarsComponent } from './component/calendars/calendars.component';
 import { HomeComponent } from './component/home/home.component';
 import { SchoolBoardComponent } from './component/school-board/school-board.component';
@@ -27,7 +27,7 @@ const routes: Routes = [
         ],
       },
     },
-    component: ContactComponent,
+    component: BuildingContactComponent,
   },
   {
     path: 'banfield',
@@ -45,7 +45,7 @@ const routes: Routes = [
         ],
       },
     },
-    component: ContactComponent,
+    component: BuildingContactComponent,
   },
   { path: 'bids', component: BidsComponent },
   { path: 'board', component: SchoolBoardComponent },
@@ -66,7 +66,7 @@ const routes: Routes = [
         ],
       },
     },
-    component: ContactComponent,
+    component: BuildingContactComponent,
   },
   {
     path: 'ellis',
@@ -85,7 +85,7 @@ const routes: Routes = [
         ],
       },
     },
-    component: ContactComponent,
+    component: BuildingContactComponent,
   },
   {
     path: 'ijholton',
@@ -102,7 +102,7 @@ const routes: Routes = [
         ],
       },
     },
-    component: ContactComponent,
+    component: BuildingContactComponent,
   },
   {
     path: 'neveln',
@@ -119,7 +119,7 @@ const routes: Routes = [
         ],
       },
     },
-    component: ContactComponent,
+    component: BuildingContactComponent,
   },
   {
     path: 'southgate',
@@ -137,7 +137,7 @@ const routes: Routes = [
         ],
       },
     },
-    component: ContactComponent,
+    component: BuildingContactComponent,
   },
   {
     path: 'sumner',
@@ -155,7 +155,7 @@ const routes: Routes = [
         ],
       },
     },
-    component: ContactComponent,
+    component: BuildingContactComponent,
   },
   {
     path: 'woodson',
@@ -173,7 +173,7 @@ const routes: Routes = [
         ],
       },
     },
-    component: ContactComponent,
+    component: BuildingContactComponent,
   },
   { path: '**', redirectTo: 'home' },
 ];

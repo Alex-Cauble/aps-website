@@ -1,13 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BuildingContacts } from 'src/app/types/contact.type';
+import { BuildingContacts } from 'src/app/types/building-contacts.type';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'],
+  selector: 'app-building-contact',
+  templateUrl: './building-contact.component.html',
+  styleUrls: ['./building-contact.component.scss'],
 })
-export class ContactComponent implements OnInit {
+export class BuildingContactComponent implements OnInit {
   @Input() buildingInfo: BuildingContacts | undefined;
   constructor(private route: ActivatedRoute) {}
 

@@ -1,8 +1,4 @@
-export interface ContactNumber {
-  name: string;
-  number: string;
-  coordinator?: string;
-}
+import { ContactNumber } from './contact-number.type';
 
 export interface BuildingContacts {
   title: string;
