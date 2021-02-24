@@ -1,14 +1,14 @@
 <section>
-  <h1>{{ buildingInfo.title }}</h1>
+  <h1>{{ buildingInfo?.title }}</h1>
   <mat-list>
-    <mat-list-item *ngIf="buildingInfo.principal"
+    <mat-list-item *ngIf="buildingInfo?.principal"
       >Principal
       <span
-        ><strong>{{ buildingInfo.principal }}</strong></span
+        ><strong>{{ buildingInfo?.principal }}</strong></span
       ></mat-list-item
     >
     <app-contact-item
-      *ngFor="let contact of buildingInfo.contacts"
+      *ngFor="let contact of buildingInfo?.contacts"
       [name]="contact.name"
       [coordinator]="contact.coordinator ? contact.coordinator : ''"
       [number]="contact.number"
