@@ -1,7 +1,0 @@
-<section>
-  <h1>{{ title }}</h1>
-  <mat-list>
-    <mat-list-item *ngIf="principal">Principal <span><strong>{{ principal }}</strong></span></mat-list-item>
-    <app-contact-item *ngFor="let contact of contacts" [name]="contact.name" [coordinator]="contact.coordinator ? contact.coordinator : ''" [number]="contact.number"></app-contact-item>
-  </mat-list>
-</section>
