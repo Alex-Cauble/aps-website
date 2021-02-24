@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from 'src/app/types/Contact.type';
+import { ContactNumber } from 'src/app/types/Contact.type';
 
 @Component({
   selector: 'app-ellis-info',
@@ -9,7 +9,7 @@ import { Contact } from 'src/app/types/Contact.type';
 export class EllisInfoComponent implements OnInit {
   principal = 'Jessica Cabeen';
   title = 'Ellis Middle School';
-  contacts: Contact[] = [
+  contacts: ContactNumber[] = [
     { name: 'Phone', number: '(507)-460-1500' },
     { name: 'Fax', number: '(507)-433-7330' },
     { name: 'Attendance', number: '(507)-460-1506' },

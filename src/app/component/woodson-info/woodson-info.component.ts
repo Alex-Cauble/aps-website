@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from 'src/app/types/Contact.type';
+import { ContactNumber } from 'src/app/types/Contact.type';
 
 @Component({
   selector: 'app-woodson-info',
@@ -9,7 +9,7 @@ import { Contact } from 'src/app/types/Contact.type';
 export class WoodsonInfoComponent {
   principal = 'Jill Rollie';
   title = 'Woodson Kindergarten Center';
-  contacts: Contact[] = [
+  contacts: ContactNumber[] = [
     { name: 'Phone', number: '(507)-460-1400' },
     { name: 'Fax', number: '(507)-437-2012' },
     { name: 'Nurse', number: '(507)-460-1402' },

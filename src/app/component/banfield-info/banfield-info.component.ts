@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from 'src/app/types/Contact.type';
+import { ContactNumber } from 'src/app/types/Contact.type';
 
 @Component({
   selector: 'app-banfield-info',
@@ -9,7 +9,7 @@ import { Contact } from 'src/app/types/Contact.type';
 export class BanfieldInfoComponent {
   principal = 'Jeff Roland';
   title = 'Banfield Elementary School';
-  contacts: Contact[] = [
+  contacts: ContactNumber[] = [
     { name: 'Phone', number: '(507)-460-1200' },
     { name: 'Fax', number: '(507)-437-8662' },
     { name: 'Attendance', number: '(507)-460-1200' },

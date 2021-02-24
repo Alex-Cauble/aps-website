@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from 'src/app/types/Contact.type';
+import { ContactNumber } from 'src/app/types/Contact.type';
 
 @Component({
   selector: 'app-clc-info',
@@ -8,7 +8,7 @@ import { Contact } from 'src/app/types/Contact.type';
 })
 export class ClcInfoComponent {
   title = 'Community Learning Center';
-  contacts: Contact[] = [
+  contacts: ContactNumber[] = [
     { name: 'Phone', number: '(507)-406-1700' },
     { name: 'Fax', number: '(507)-355-1215' },
     { name: 'Adult Learning', number: '(507)-460-1860' },

@@ -17,7 +17,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './component/home/home.component';
-import { ContactComponent } from './component/contact/contact.component';
+import { ContactComponent } from './component/building-contact/contact.component';
 import { AlertComponent } from './component/alert/alert.component';
 import { AustinHighInfoComponent } from './component/austin-high-info/austin-high-info.component';
 import { EllisInfoComponent } from './component/ellis-info/ellis-info.component';

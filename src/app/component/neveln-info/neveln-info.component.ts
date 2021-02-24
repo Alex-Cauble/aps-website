@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from 'src/app/types/Contact.type';
+import { ContactNumber } from 'src/app/types/Contact.type';
 
 @Component({
   selector: 'app-neveln-info',
@@ -10,7 +10,7 @@ export class NevelnInfoComponent {
   title = 'Neveln Elementary School';
   principal = 'David Wolff';
 
-  contacts: Contact[] = [
+  contacts: ContactNumber[] = [
     { name: 'Phone', number: '(507)-460-1600' },
     { name: 'Fax', number: '(507)-355-1722' },
     { name: 'Attendance', number: '(507)-460-1600' },
