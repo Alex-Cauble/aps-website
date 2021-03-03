@@ -56,7 +56,7 @@ const routes: Routes = [
       buildingInfo: {
         title: 'Community Learning Center',
         contacts: [
-          { name: 'Phone', number: '(507)-406-1700' },
+          { name: 'Phone', number: '(507)-460-1700' },
           { name: 'Fax', number: '(507)-355-1215' },
           { name: 'Adult Learning', number: '(507)-460-1860' },
           { name: 'ECFE', number: '(507)-460-1707' },
