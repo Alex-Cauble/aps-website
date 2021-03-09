@@ -37,6 +37,15 @@
   justify-content: center;
 }
 
+#router-container {
+  position: relative;
+  height: 100%;
+  & > * {
+    position: absolute;
+    display: block;
+  }
+}
+
 .flex-right {
   margin-left: auto;
 }

@@ -243,6 +243,8 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <app-alert></app-alert>
-    <router-outlet></router-outlet>
+    <div id="router-container" [@routeAnimations]="prepareRoute(outlet)">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

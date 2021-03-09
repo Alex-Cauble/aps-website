@@ -11,6 +11,7 @@ const routes: Routes = [
   {
     path: 'ahs',
     data: {
+      page: 2,
       buildingInfo: {
         title: 'Austin High School',
         principal: 'Andrea Malo',
@@ -32,6 +33,7 @@ const routes: Routes = [
   {
     path: 'banfield',
     data: {
+      page: 3,
       buildingInfo: {
         principal: 'Jeff Roland',
         title: 'Banfield Elementary School',
@@ -47,12 +49,13 @@ const routes: Routes = [
     },
     component: BuildingContactComponent,
   },
-  { path: 'bids', component: BidsComponent },
-  { path: 'board', component: SchoolBoardComponent },
-  { path: 'calendars', component: CalendarsComponent },
+  { path: 'bids', component: BidsComponent, data: { page: 4 } },
+  { path: 'board', component: SchoolBoardComponent, data: { page: 5 } },
+  { path: 'calendars', component: CalendarsComponent, data: { page: 6 } },
   {
     path: 'clc',
     data: {
+      page: 7,
       buildingInfo: {
         title: 'Community Learning Center',
         contacts: [
@@ -71,6 +74,7 @@ const routes: Routes = [
   {
     path: 'ellis',
     data: {
+      page: 8,
       buildingInfo: {
         principal: 'Jessica Cabeen',
         title: 'Ellis Middle School',
@@ -90,6 +94,7 @@ const routes: Routes = [
   {
     path: 'ijholton',
     data: {
+      page: 9,
       buildingInfo: {
         principal: 'Dewey Schara',
         title: 'IJ Holton Intermediate School',
@@ -107,6 +112,7 @@ const routes: Routes = [
   {
     path: 'neveln',
     data: {
+      page: 10,
       buildingInfo: {
         title: 'Neveln Elementary School',
         principal: 'David Wolff',
@@ -124,6 +130,7 @@ const routes: Routes = [
   {
     path: 'southgate',
     data: {
+      page: 11,
       buildingInfo: {
         title: 'Southgate Elementary School',
         principal: 'Katie Baskin',
@@ -142,6 +149,7 @@ const routes: Routes = [
   {
     path: 'sumner',
     data: {
+      page: 12,
       buildingInfo: {
         principal: 'Sheila Berger',
         title: 'Sumner Elementary School',
@@ -160,6 +168,7 @@ const routes: Routes = [
   {
     path: 'woodson',
     data: {
+      page: 13,
       buildingInfo: {
         principal: 'Jill Rollie',
         title: 'Woodson Kindergarten Center',
