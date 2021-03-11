@@ -1,5 +1,8 @@
 <section *ngIf="alertMessages && alertMessages.length > 0">
   <ul>
     <li *ngFor="let alert of alertMessages">{{ alert }}</li>
+    <li routerLink="distance-learning-info">
+      Click <span style="color: blue">Here</span> for Details
+    </li>
   </ul>
 </section>

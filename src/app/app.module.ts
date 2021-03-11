@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './component/home/home.component';
@@ -21,6 +22,7 @@ import { SchoolBoardComponent } from './component/school-board/school-board.comp
 import { HttpClientModule } from '@angular/common/http';
 import { CalendarsComponent } from './component/calendars/calendars.component';
 import { BidsComponent } from './component/bids/bids.component';
+import { DistanceLearningDetailsComponent } from './component/distance-learning-details/distance-learning-details.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { BidsComponent } from './component/bids/bids.component';
     SchoolBoardComponent,
     CalendarsComponent,
     BidsComponent,
+    DistanceLearningDetailsComponent,
   ],
   imports: [
     HttpClientModule,
@@ -41,6 +44,7 @@ import { BidsComponent } from './component/bids/bids.component';
     BrowserAnimationsModule,
     LayoutModule,
     MatToolbarModule,
+    MatCardModule,
     MatButtonModule,
     MatExpansionModule,
     MatMenuModule,

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BidsComponent } from './component/bids/bids.component';
 import { BuildingContactComponent } from './component/building-contact/building-contact.component';
 import { CalendarsComponent } from './component/calendars/calendars.component';
+import { DistanceLearningDetailsComponent } from './component/distance-learning-details/distance-learning-details.component';
 import { HomeComponent } from './component/home/home.component';
 import { SchoolBoardComponent } from './component/school-board/school-board.component';
 
@@ -70,6 +71,11 @@ const routes: Routes = [
       },
     },
     component: BuildingContactComponent,
+  },
+  {
+    path: 'distance-learning-info',
+    component: DistanceLearningDetailsComponent,
+    data: { page: 12 },
   },
   {
     path: 'ellis',
