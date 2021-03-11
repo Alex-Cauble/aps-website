@@ -7,12 +7,17 @@ h3 {
 
 mat-list {
   max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   margin-top: 15px;
   .mat-raised-button {
     background-color: $white;
     display: flex;
     justify-content: center;
+    word-wrap: break-word;
+    white-space: normal;
     max-width: 90vw;
     &:hover {
       background: darken($white, 10%);
