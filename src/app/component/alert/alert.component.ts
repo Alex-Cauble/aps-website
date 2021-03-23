@@ -1,17 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { AlertService } from 'src/app/services/alert.service';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-alert',
   templateUrl: './alert.component.html',
   styleUrls: ['./alert.component.scss'],
 })
-export class AlertComponent implements OnInit {
+export class AlertComponent implements AfterViewInit {
   alertMessages: string[] = [];
 
-  constructor(private alertService: AlertService) {}
-
-  async ngOnInit(): Promise<void> {
-    this.alertMessages = await this.alertService.getAlerts().toPromise();
+  constructor() {}
+  ngAfterViewInit(): void {
+    throw new Error('Method not implemented.');
   }
 }
