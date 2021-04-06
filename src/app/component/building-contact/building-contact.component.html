@@ -1,5 +1,5 @@
-<section>
-  <h1>{{ buildingInfo?.title }}</h1>
+<mat-card>
+  <mat-card-header>{{ buildingInfo?.title }}</mat-card-header>
   <mat-list>
     <mat-list-item *ngIf="buildingInfo?.principal"
       >Principal
@@ -14,4 +14,4 @@
       [number]="contact.number"
     ></app-contact-item>
   </mat-list>
-</section>
+</mat-card>

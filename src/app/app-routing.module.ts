@@ -72,6 +72,29 @@ const routes: Routes = [
     component: BuildingContactComponent,
   },
   {
+    path: 'district',
+    data: {
+      page: 16,
+      buildingInfo: {
+        title: 'District Departments',
+        contacts: [
+          { name: 'Superintendent', number: '(507)-460-1900' },
+          { name: 'Activities', number: '(507)-355-1825' },
+          { name: 'Educational Services', number: '(507)-460-1912' },
+          { name: 'Enrollment Office', number: '(507)-460-1937' },
+          { name: 'Facility Services', number: '(507)-460-1928' },
+          { name: 'Dome Coordinator', number: '(507)-460-1927' },
+          { name: 'Food & Nutrition', number: '(507)-460-1919' },
+          { name: 'Human Resources', number: '(507)-460-1910' },
+          { name: 'Technology Services', number: '(507)-460-1930' },
+          { name: 'Special Services', number: '(507)-460-1916' },
+          { name: 'Research & Assesment', number: '(507)-460-1933' },
+        ],
+      },
+    },
+    component: BuildingContactComponent,
+  },
+  {
     path: 'ellis',
     data: {
       page: 8,
