@@ -7,10 +7,16 @@
         ><strong>{{ buildingInfo?.principal }}</strong></span
       ></mat-list-item
     >
+    <app-detail-contact-item
+      *ngFor="let contact of buildingInfo?.detailContacts"
+      [name]="contact.name"
+      [email]="contact.email"
+      [phoneNumber]="contact.phoneNumber"
+      [title]="contact.title"
+    ></app-detail-contact-item>
     <app-contact-item
       *ngFor="let contact of buildingInfo?.contacts"
       [name]="contact.name"
-      [coordinator]="contact.coordinator ? contact.coordinator : ''"
       [number]="contact.number"
     ></app-contact-item>
   </mat-list>

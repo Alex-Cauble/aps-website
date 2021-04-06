@@ -67,6 +67,14 @@ const routes: Routes = [
           { name: 'Kids Korner', number: '(507)-460-1704' },
           { name: 'Para Español', number: '(507)-460-1703' },
         ],
+        detailContacts: [
+          {
+            name: 'Amy Goette',
+            title: 'Early Childhood Screening',
+            email: 'amy.goette@austin.k12.mn.us',
+            phoneNumber: '(507)-460-3484',
+          },
+        ],
       },
     },
     component: BuildingContactComponent,
