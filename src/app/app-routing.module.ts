@@ -13,8 +13,11 @@ const routes: Routes = [
     data: {
       page: 2,
       buildingInfo: {
-        title: 'Austin High School',
-        principal: 'Andrea Malo',
+        name: 'Austin High School',
+        admin: {
+          title: 'Principal',
+          name: 'Andrea Malo',
+        },
         contacts: [
           { name: 'Phone', number: '(507)-460-1800' },
           { name: 'Fax', number: '(507)-355-2415' },
@@ -35,8 +38,11 @@ const routes: Routes = [
     data: {
       page: 3,
       buildingInfo: {
-        principal: 'Jeff Roland',
-        title: 'Banfield Elementary School',
+        admin: {
+          title: 'Principal',
+          name: 'Jeff Roland',
+        },
+        name: 'Banfield Elementary School',
         contacts: [
           { name: 'Phone', number: '(507)-460-1200' },
           { name: 'Fax', number: '(507)-437-8662' },
@@ -57,7 +63,11 @@ const routes: Routes = [
     data: {
       page: 7,
       buildingInfo: {
-        title: 'Community Learning Center',
+        name: 'Community Learning Center',
+        admin: {
+          title: 'Administrator',
+          name: 'Jennifer Lawhead',
+        },
         contacts: [
           { name: 'Phone', number: '(507)-460-1700' },
           { name: 'Fax', number: '(507)-355-1215' },
@@ -84,7 +94,7 @@ const routes: Routes = [
     data: {
       page: 16,
       buildingInfo: {
-        title: 'District Departments',
+        name: 'District Departments',
         contacts: [
           { name: 'Superintendent', number: '(507)-460-1900' },
           { name: 'Activities', number: '(507)-355-1825' },
@@ -107,8 +117,11 @@ const routes: Routes = [
     data: {
       page: 8,
       buildingInfo: {
-        principal: 'Jessica Cabeen',
-        title: 'Ellis Middle School',
+        admin: {
+          title: 'Principal',
+          name: 'Jessica Cabeen',
+        },
+        name: 'Ellis Middle School',
         contacts: [
           { name: 'Phone', number: '(507)-460-1500' },
           { name: 'Fax', number: '(507)-433-7330' },
@@ -127,8 +140,11 @@ const routes: Routes = [
     data: {
       page: 9,
       buildingInfo: {
-        principal: 'Dewey Schara',
-        title: 'IJ Holton Intermediate School',
+        admin: {
+          title: 'Principal',
+          name: 'Dewey Schara',
+        },
+        name: 'IJ Holton Intermediate School',
         contacts: [
           { name: 'Phone', number: '(507)-460-1525' },
           { name: 'Fax', number: '(507)-335-1608' },
@@ -145,8 +161,11 @@ const routes: Routes = [
     data: {
       page: 10,
       buildingInfo: {
-        title: 'Neveln Elementary School',
-        principal: 'David Wolff',
+        name: 'Neveln Elementary School',
+        admin: {
+          title: 'Principal',
+          name: 'David Wolff',
+        },
         contacts: [
           { name: 'Phone', number: '(507)-460-1600' },
           { name: 'Fax', number: '(507)-355-1722' },
@@ -163,8 +182,11 @@ const routes: Routes = [
     data: {
       page: 11,
       buildingInfo: {
-        title: 'Southgate Elementary School',
-        principal: 'Katie Baskin',
+        name: 'Southgate Elementary School',
+        admin: {
+          title: 'Principal',
+          name: 'Katie Baskin',
+        },
         contacts: [
           { name: 'Phone', number: '(507)-460-1300' },
           { name: 'Fax', number: '(507)-433-9651' },
@@ -182,8 +204,11 @@ const routes: Routes = [
     data: {
       page: 12,
       buildingInfo: {
-        principal: 'Sheila Berger',
-        title: 'Sumner Elementary School',
+        admin: {
+          title: 'Principal',
+          name: 'Sheila Berger',
+        },
+        name: 'Sumner Elementary School',
         contacts: [
           { name: 'Phone', number: '(507)-460-1100' },
           { name: 'Fax', number: '(507)-434-4003' },
@@ -201,8 +226,11 @@ const routes: Routes = [
     data: {
       page: 13,
       buildingInfo: {
-        principal: 'Jill Rollie',
-        title: 'Woodson Kindergarten Center',
+        admin: {
+          title: 'Principal',
+          name: 'Jille Rollie',
+        },
+        name: 'Woodson Kindergarten Center',
         contacts: [
           { name: 'Phone', number: '(507)-460-1400' },
           { name: 'Fax', number: '(507)-437-2012' },
