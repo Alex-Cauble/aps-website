@@ -15,7 +15,12 @@
       alt="Austin 'A' logo"
       style="height: 100%"
     />
-    <button id="header-text" mat-button class="pointer" routerLink="home">
+    <button
+      id="header-text"
+      mat-button
+      class="pointer"
+      (click)="navigate('home', drawer)"
+    >
       Austin Public Schools
     </button>
     <span style="margin: auto" *ngIf="!(isHandset$ | async)"
