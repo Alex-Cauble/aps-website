@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
-import { RouterOutlet } from '@angular/router';
+import { map, pluck, shareReplay, tap } from 'rxjs/operators';
+import { Router, RouterOutlet } from '@angular/router';
 import { slider } from './router-animations.animation';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-nav',
@@ -12,6 +13,7 @@ import { slider } from './router-animations.animation';
   animations: [slider],
 })
 export class NavComponent {
+  isHandset: any;
   isHandset$: Observable<boolean> = this.breakpointObserver
     .observe([
       Breakpoints.Handset,
@@ -21,15 +23,26 @@ export class NavComponent {
       Breakpoints.XSmall,
     ])
     .pipe(
-      map((result) => result.matches),
+      pluck('matches'),
+      tap((value) => (this.isHandset = value)),
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+    private router: Router
+  ) {}
 
   prepareRoute(outlet: RouterOutlet) {
     return (
       outlet && outlet.activatedRouteData && outlet.activatedRouteData['page']
     );
+  }
+
+  navigate(route: string, drawer: MatSidenav): void {
+    if (this.isHandset) {
+      drawer.close();
+    }
+    this.router.navigateByUrl(route);
   }
 }

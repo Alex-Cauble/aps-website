@@ -146,60 +146,26 @@
           <mat-expansion-panel-header>
             <mat-panel-title><strong>Schools</strong></mat-panel-title>
           </mat-expansion-panel-header>
-          <a mat-list-item routerLink="ahs">Austin High</a>
-          <a mat-list-item routerLink="ellis">Ellis</a>
-          <a mat-list-item routerLink="ijholton">IJ Holton</a>
-          <a mat-list-item routerLink="banfield">Banfield</a>
-          <a mat-list-item routerLink="neveln">Neveln</a>
-          <a mat-list-item routerLink="southgate">Southgate</a>
-          <a mat-list-item routerLink="sumner">Sumner</a>
-          <a mat-list-item routerLink="woodson">Woodson</a>
-          <a mat-list-item routerLink="clc">CLC</a>
-          <a mat-list-item routerLink="ahs">Area Learning Center</a>
+          <a mat-list-item (click)="navigate('ahs', drawer)">Austin High</a>
+          <a mat-list-item (click)="navigate('ellis', drawer)">Ellis</a>
+          <a mat-list-item (click)="navigate('ijholton', drawer)">IJ Holton</a>
+          <a mat-list-item (click)="navigate('banfield', drawer)">Banfield</a>
+          <a mat-list-item (click)="navigate('neveln', drawer)">Neveln</a>
+          <a mat-list-item (click)="navigate('southgate', drawer)">Southgate</a>
+          <a mat-list-item (click)="navigate('sumner', drawer)">Sumner</a>
+          <a mat-list-item (click)="navigate('woodson', drawer)">Woodson</a>
+          <a mat-list-item (click)="navigate('clc', drawer)">CLC</a>
+          <a mat-list-item (click)="navigate('ahs', drawer)"
+            >Area Learning Center</a
+          >
         </mat-expansion-panel>
-        <button class="nav-button" routerLink="district" mat-button>
+        <button
+          class="nav-button"
+          (click)="navigate('district', drawer)"
+          mat-button
+        >
           <strong>District Departments</strong>
         </button>
-        <!-- <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title
-              ><strong>District Departments</strong></mat-panel-title
-            >
-          </mat-expansion-panel-header>
-          <button mat-button>
-            Superintendent <a href="tel:15074601900">(507)-460-1900</a>
-          </button>
-          <button mat-button>
-            Activities <a href="tel:15074601825">(507)-460-1825</a>
-          </button>
-          <button mat-button>
-            Educational Services <a href="tel:15074601912">(507)-460-1912</a>
-          </button>
-          <button mat-button>
-            Enrollment Office <a href="tel:15074601937">(507)-460-1937</a>
-          </button>
-          <button mat-button>
-            Facility Services <a href="tel:15074601928">(507)-460-1928</a>
-          </button>
-          <button mat-button>
-            Dome Coordinator <a href="tel:15074601927">(507)-460-1927</a>
-          </button>
-          <button mat-button>
-            Food & Nutrition <a href="tel:15074601919">(507)-460-1919</a>
-          </button>
-          <button mat-button>
-            Human Resources <a href="tel:15074601910">(507)-460-1910</a>
-          </button>
-          <button mat-button>
-            Technology Services <a href="tel:15074601930">(507)-460-1930</a>
-          </button>
-          <button mat-button>
-            Special Services <a href="tel:15074601916">(507)-460-1916</a>
-          </button>
-          <button mat-button>
-            Research & Assessment <a href="tel:15074601933">(507)-460-1933</a>
-          </button>
-        </mat-expansion-panel> -->
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title><strong>Community</strong></mat-panel-title>
@@ -234,13 +200,17 @@
         </mat-expansion-panel>
       </mat-accordion>
     </mat-nav-list>
-    <button class="nav-button" routerLink="calendars" mat-button>
+    <button
+      class="nav-button"
+      (click)="navigate('calendars', drawer)"
+      mat-button
+    >
       <strong>Calendars</strong>
     </button>
-    <button class="nav-button" routerLink="board" mat-button>
+    <button class="nav-button" (click)="navigate('board', drawer)" mat-button>
       <strong>School Board</strong>
     </button>
-    <button class="nav-button" routerLink="bids" mat-button>
+    <button class="nav-button" (click)="navigate('bids', drawer)" mat-button>
       <strong>Advertisement for Bids</strong>
     </button>
   </mat-sidenav>
