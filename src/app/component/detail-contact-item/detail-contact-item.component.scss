@@ -1,0 +1,16 @@
+.detail-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  &:hover {
+    background: darken(white, 10%);
+  }
+  padding: 16px;
+}
+.name {
+  text-align: left;
+}
+a {
+  text-decoration: none;
+  text-align: right;
+}

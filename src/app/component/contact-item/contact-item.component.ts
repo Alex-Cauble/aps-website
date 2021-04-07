@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class ContactItemComponent {
   @Input() name: string = '';
   @Input() number: string = '';
+  @Input() email: string = '';
   @Input() coordinator: string = '';
 
   constructor() {}

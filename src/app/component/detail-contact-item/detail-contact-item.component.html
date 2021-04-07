@@ -1,0 +1,6 @@
+<div class="detail-contact">
+  <div class="title">{{ title }}:</div>
+  <a class="phone" [href]="formatAsTelephone(phoneNumber)">{{ phoneNumber }}</a>
+  <div class="name">{{ name }}:</div>
+  <a class="email" *ngIf="email" [href]="formatAsEmail(email)">{{ email }}</a>
+</div>
