@@ -4,7 +4,7 @@ import { DetailContact } from './detail-contacts.type';
 
 export interface BuildingContacts {
   name: string;
-  buildingAdmin?: Administrator | undefined;
+  admin?: Administrator | undefined;
   contacts: ContactNumber[];
   detailContacts: DetailContact[];
 }

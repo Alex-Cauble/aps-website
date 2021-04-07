@@ -1,10 +1,10 @@
 <mat-card>
-  <mat-card-header>{{ buildingInfo?.title }}</mat-card-header>
+  <mat-card-header>{{ buildingInfo?.name }}</mat-card-header>
   <mat-list>
-    <mat-list-item *ngIf="buildingInfo?.principal"
-      >Principal
+    <mat-list-item *ngIf="buildingInfo?.admin"
+      >{{ buildingInfo?.admin?.title }}
       <span
-        ><strong>{{ buildingInfo?.principal }}</strong></span
+        ><strong>{{ buildingInfo?.admin?.name }}</strong></span
       ></mat-list-item
     >
     <app-detail-contact-item
