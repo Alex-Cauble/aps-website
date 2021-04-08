@@ -6,14 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatExpansionModule } from '@angular/material/expansion';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './component/home/home.component';
 import { BuildingContactComponent } from './component/building-contact/building-contact.component';
 import { AlertComponent } from './component/alert/alert.component';
@@ -23,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CalendarsComponent } from './component/calendars/calendars.component';
 import { BidsComponent } from './component/bids/bids.component';
 import { DetailContactItemComponent } from './component/detail-contact-item/detail-contact-item.component';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -43,14 +36,7 @@ import { DetailContactItemComponent } from './component/detail-contact-item/deta
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatButtonModule,
-    MatExpansionModule,
-    MatMenuModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
