@@ -1,24 +1,23 @@
 $white: white;
-
 h3 {
   margin: 25px;
   text-align: center;
 }
-
 mat-list {
   max-width: 500px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
   margin: auto;
   margin-top: 15px;
-  .mat-raised-button {
+  a {
     background-color: $white;
     display: flex;
     justify-content: center;
     max-width: 90vw;
+    margin: 8px auto;
     &:hover {
       background: darken($white, 10%);
+    }
+    span {
+      margin-left: auto;
     }
   }
 }
