@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AthleticsActivitiesComponent } from './component/athletics-activities/athletics-activities.component';
 import { BidsComponent } from './component/bids/bids.component';
 import { BuildingContactComponent } from './component/building-contact/building-contact.component';
 import { CalendarsComponent } from './component/calendars/calendars.component';
@@ -32,6 +33,30 @@ const routes: Routes = [
       },
     },
     component: BuildingContactComponent,
+  },
+  {
+    path: 'athletics-activities',
+    data: {
+      page: 17,
+      buildingInfo: {
+        name: 'Athletics/Activities',
+        detailContacts: [
+          {
+            name: 'Lisa Quednow',
+            title: 'Activities Director',
+            email: 'lisa.quednow@austin.k12.mn.us',
+            phoneNumber: '(507)-460-1825',
+          },
+          {
+            name: 'Kelly Joseph',
+            title: 'Activities Secretary',
+            email: 'kelly.joseph@austin.k12.mn.us',
+            phoneNumber: '(507)-460-1825',
+          },
+        ],
+      },
+    },
+    component: AthleticsActivitiesComponent,
   },
   {
     path: 'banfield',

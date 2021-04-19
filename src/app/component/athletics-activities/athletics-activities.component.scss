@@ -1,0 +1,25 @@
+$white: white;
+h3 {
+  margin: 25px;
+  text-align: center;
+}
+ul {
+  max-width: 550px;
+  margin: auto;
+  margin-top: 15px;
+  list-style: none;
+  button,
+  a {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    max-width: 90vw;
+    margin: 8px auto;
+    &:hover {
+      background: darken($white, 10%);
+    }
+    span {
+      margin-left: auto;
+    }
+  }
+}

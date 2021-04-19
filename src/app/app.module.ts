@@ -16,6 +16,7 @@ import { CalendarsComponent } from './component/calendars/calendars.component';
 import { BidsComponent } from './component/bids/bids.component';
 import { DetailContactItemComponent } from './component/detail-contact-item/detail-contact-item.component';
 import { MaterialModule } from './material.module';
+import { AthleticsActivitiesComponent } from './component/athletics-activities/athletics-activities.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MaterialModule } from './material.module';
     CalendarsComponent,
     BidsComponent,
     DetailContactItemComponent,
+    AthleticsActivitiesComponent,
   ],
   imports: [
     HttpClientModule,
